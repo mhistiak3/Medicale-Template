@@ -1,0 +1,209 @@
+:root {
+  --ia-primary: #00a4f4;
+  --ia-gradient-bg: linear-gradient(
+    90deg,
+    rgba(167, 226, 255, 1) 0%,
+    rgba(0, 149, 222, 1) 100%
+  );
+  --ia-gradient-text: linear-gradient(
+    90deg,
+    rgb(2, 114, 171) 0%,
+    rgba(167, 226, 255, 1) 100%
+  );
+  --ia-gray: #b0b0b0;
+}
+/* preset */
+* {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+}
+body,html {
+  overflow-x: hidden;
+  font-family: "Manrope", sans-serif;
+  background-color: rgba(167, 226, 255, 0.1);
+}
+a {
+  text-decoration: none !important;
+}
+.bg-main {
+  background-color: var(--ia-primary);
+  color: white !important;
+}
+.text-main {
+  color: var(--ia-primary);
+}
+.fs-16 {
+  font-size: 16px;
+}
+.text-gray {
+  color: var(--ia-gray) !important;
+}
+.w-60 {
+  width: 60%;
+  margin: auto;
+}
+.card {
+  border: 1px solid var(--ia-primary) !important;
+}
+.shadow-lg {
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+.gradient-text {
+  background: var(--ia-gradient-text);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-rev {
+  background: var(--ia-gradient-bg);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Btn Classes */
+.btn {
+  border: 2px solid transparent;
+}
+.btn:hover {
+  border: 2px solid var(--ia-primary) !important;
+  color: var(--ia-primary) !important;
+  background: transparent;
+}
+.gradient-btn {
+  background: var(--ia-gradient-bg);
+  border-left-style: none;
+  padding: 13px 20px;
+}
+
+/* Start Navbar */
+header {
+  position: relative;
+}
+.dotted-line {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.active {
+  color: var(--ia-primary) !important;
+}
+.nav-link:hover {
+  color: var(--ia-primary) !important;
+}
+.logo {
+  width: 160px;
+}
+.companies-icon img {
+  width: 40px;
+}
+/* Start Appoinment */
+
+#appointment-section input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#appointment-section input::placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
+/* Start Services */
+
+#service-box {
+  padding: 45px;
+  padding-right: 100px;
+}
+#service-box img {
+  width: 60px;
+}
+
+/* Start Step Design */
+#steps {
+  position: relative;
+}
+#steps > .line-1 {
+  position: relative;
+  top: 154px;
+  left: 7px;
+  width: 3.5px;
+  z-index: -1;
+}
+#steps > .line-2 {
+  position: relative;
+  bottom: 255px;
+  left: 7px;
+  width: 3.5px;
+  z-index: -1;
+}
+.step .number {
+  width: 45px !important;
+  height: 45px !important;
+  background: var(--ia-gradient-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 100%;
+}
+/* Start testimonials-section */
+#testimonials-section .card {
+  background: linear-gradient(
+    100deg,
+    rgba(180, 222, 244, 0.51) 20%,
+    rgba(243, 248, 251, 0.42) 100%
+  );
+}
+/* counter */
+#counter {
+  max-width: 80%;
+  margin: auto;
+}
+/* STart team */
+.team-box-1 {
+  background-color: #00a4f4;
+  max-width: 720px;
+  height: 350px;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+.team-box-1 img {
+  position: absolute;
+  top: -29px;
+  left: -20px;
+  width: 290px;
+}
+.team-box-2 {
+  background-color: #00a4f4;
+  max-width: 720px;
+  height: 330px;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+.team-box-2 img {
+  position: absolute;
+  top: -44px;
+  left: -22px;
+  width: 290px;
+}
+
+/* Contact US */
+#support input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#support input::placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
+#support .input-group {
+  overflow: hidden;
+  border: 1.5px solid var(--ia-primary) !important;
+  border-radius: 15px !important;
+}
+/* Footer */
+footer {
+  background-color: #e3f1fb;
+}
